@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home_page.css" />
+    <link rel="stylesheet" type="text/css" href="css/Begginers_plants.css">
+ 
+    <script src="js/BegginersPlants.js"></script> 
+    <link rel="icon" href="img/ficon.svg" type="image/x-icon">
+    <title>Foliage</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="home_page.html" class="logo">
+            <img src="img/LOGO.svg" alt="Logo" title="a logo plant"/>
+        </a>
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="Beginner_plants.html" class="ImHere">Beginner Plants</a></li>
+            <li><a href="Plant_care.html">Plant Care Basics</a></li>
+            <li><a href="Decorating_with_Plants.html">Decorating</a></li>
+            <li><a href="Troubleshooting_page.html">Troubleshooting</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article id="featured">
+        <article class="itemP1">
+            <figure>
+                <img id="featured-image" src="img/monsteraPlant.png" alt="Variegated Swiss Cheese Plant"  title="the Monstera"/>
+            </figure>
+        </article>
+        <article class="itemP2">
+            <h1 id="plant-title">The Monstera</h1>
+        </article>
+        <article class="itemP3">
+            <h2 id="plant-name">Variegated Swiss Cheese Plant</h2>
+            <a href="https://www.plantcentraal.nl/en/category/garden-plants/" >Shop Now</a>
+        </article>
+        <article class="itemP4">
+            <p id="plant-description">The Monstera adansonii variegata is a low-maintenance plant, perfect for beginners. It adapts well to bright, indirect light and only needs watering when the top inch of soil dries out. With its unique, hole-filled leaves and beautiful variegation, it adds a stylish touch to any space. Easy to care for and hard to overwater, it’s a great choice for anyone new to plant care.</p>
+            <a href="https://www.plantcentraal.nl/en/category/garden-plants/" id="shop-link">Shop Now</a>
+        </article>
+        <article class="itemP5">
+            <section class="image-gallery">
+  
+                <figure>
+                    <img src="img/EcheveriaPlant.png" alt="Echeveria Succulent" title="Echeveria"
+                        onclick="updateFeatured('img/EcheveriaPlant.png', 'Echeveria Succulent', 'Succulent Plant', 'is a hardy, low-maintenance succulent, perfect for beginners. It thrives in bright light and only needs watering when the soil is completely dry, making it a great plant for anyone with a busy lifestyle. With its beautiful rosette shape and colorful, plump leaves, it adds a stylish and modern touch to any space. Its drought tolerance and easy care make the Echeveria an excellent choice for those new to plant care or anyone looking for a nearly effortless plant to brighten up their home.')" />
+                </figure>
+                <figure>
+                    <img src="img/pothosPlant.png" alt="Devil’s Ivy" title="pothos Plant"
+                        onclick="updateFeatured('img/pothosPlant.png', 'Devil’s Ivy', 'Pothos Plant', 'is a versatile and forgiving plant, perfect for beginners. Its heart-shaped leaves and trailing vines can brighten up any room, and it thrives in a wide range of light conditions, from low light to bright, indirect light. Pothos is incredibly low-maintenance, requiring only occasional watering, and can even grow in water! Whether you want it to climb a trellis or trail from a hanging basket, this plant is easy to care for and adds lush greenery to any space.')" />
+                </figure>
+                <figure>
+                    <img src="img/spiderPlant.png" alt="Spider Plant" title="Spider plant"
+                        onclick="updateFeatured('img/spiderPlant.png', 'Spider Plant', 'Chlorophytum', 'one of the easiest plants to care for, making it a perfect choice for beginners. It adapts well to various lighting conditions, from bright indirect light to low light, and only needs watering when the soil feels dry. With its long, arching leaves and striking green-and-white stripes, the Spider Plant adds a lively touch to any room. It’s also known for purifying the air and is nearly impossible to kill, making it an excellent option for new plant owners looking for a low-maintenance and stylish plant.')" />
+                </figure>
+                <figure>
+                    <img src="img/monsteraPlant.png" alt="Variegated Swiss Cheese Plant" title="monstera plant"
+                        onclick="updateFeatured('img/monsteraPlant.png', 'Variegated Swiss Cheese Plant', 'The Monstera', 'The Monstera adansonii variegata is a low-maintenance plant, perfect for beginners. It adapts well to bright, indirect light and only needs watering when the top inch of soil dries out. With its unique, hole-filled leaves and beautiful variegation, it adds a stylish touch to any space. Easy to care for and hard to overwater, it’s a great choice for anyone new to plant care.')" />
+                </figure>
+            </section>
+        </article>
+    </article>
+</main>
+<footer >
+    <img src="img/ficon.svg" title="logo icon" alt="Logo" /> 
+    <span>&copy; 2024 Foliage. All rights reserved.</span>
+</footer>
+
+</body>
+</html>

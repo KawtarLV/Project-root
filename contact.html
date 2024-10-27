@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home_page.css" />
+    <link rel="stylesheet" type="text/css" href="css/Contact.css" />
+    <link rel="icon" href="img/ficon.svg" type="image/x-icon">
+    <title>Foliage</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home_page.html" class="logo">
+                <img src="img/LOGO.svg" alt="Logo" title="a logo plant"/>
+            </a>
+            <input type="checkbox" id="toggle-menu" />
+            <label for="toggle-menu" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="Beginner_plants.html">Beginner Plants</a></li>
+                <li><a href="Plant_care.html">Plant Care Basics</a></li>
+                <li><a href="Decorating_with_Plants.html">Decorating</a></li>
+                <li><a href="Troubleshooting_page.html">Troubleshooting</a></li>
+                <li><a href="contact.html" class="ImHere">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="mainArticle">
+        <article class="article1">
+            <h1>Contact us</h1>
+            <img src="img/contactImg.png" alt="background image " title="decoration img"/>
+        </article>
+        <article class="article2">
+            <p>If you have any questions or need assistance, please fill out the contact form below.</p>
+            <form> 
+                <fieldset>
+                    <legend>To contact us</legend>
+                    
+                    <label>Gender:</label>
+                    <article class="radio-group">
+                        <label >
+                            <input type="radio" name="gender" value="male"> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </article>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="enter your name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="email@gmail.com" required>
+        
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" value="phone" placeholder="enter your phone number" required>
+        
+
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="text us" required></textarea>
+                </fieldset>
+        
+                <input value="Submit" type="button" name="submit" class="submit"/>
+            </form>
+        </article>
+        
+        
+        <article class="article3">
+        </article>
+        <article class="article4">
+            <p>We’d love to hear from you! Whether you have questions, feedback, or just want to share your plant journey, feel free to reach out. Your inquiries help us improve and provide the best content for our community.</p>
+        </article>
+    </article>
+    <footer >
+        <img src="img/ficon.svg" title="logo icon" alt="Logo" /> 
+        <span>&copy; 2024 Foliage. All rights reserved.</span>
+    </footer>
+</body>
+</html>

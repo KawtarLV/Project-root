@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mysection h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+.mysection p {
+    font-size: 24;
+    margin-top: 0.5em;
+    margin: 40px;
+    background-color:#6A805FD4;
+    padding: 10px;
+    
+}
+.mysection{
+    padding-top: 75px;
+    padding-bottom: 0px;
+}
+.mysection article:nth-child(1) {
+    height: 200px;
+    background-image: url('/img/Tbg.png'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4em;
+    z-index: 1;
+}
+
+.icons-Artical {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+    margin-top: -130px;
+    z-index: -1;
+}
+.icons-Artical figure > img {
+    padding: 40px;
+    border-radius: 50%;
+    margin: 20px;
+    object-fit: contain;
+    background-color: #CFE795;
+    margin-top: -30px;
+}
+.icons-Artical figure:nth-child(odd){
+  margin-top: 70px;
+}
+
+
+
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.vertical-line {
+    width: 2px; /* Line thickness */
+    height: 250px; /* Adjust height as needed */
+    background-color: #357E25; /* Line color */
+    margin: 0px;
+}
+
+/* Container for the articles */
+.sectionCards {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 20px;
+    padding-top: 0px;
+   
+}
+
+/* Article layout */
+.sectionCards article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sectionCards figure {
+    position: relative;
+    margin: 0;
+    
+}
+
+.sectionCards figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+/* H2 title inside the image */
+.sectionCards figure h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #8CD18D;
+    font-size: 40px;
+    border-radius: 4px;
+}
+
+/* Centered figcaption text */
+.sectionCards figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #666;
+   
+}
+
+/* Text paragraph alignment */
+.sectionCards article p {
+    margin: 0;
+    padding: 50px;
+    background-color: #FEFEE3;
+    width: 200px;
+    height: 360px;
+    
+}
+
+@media (min-width: 768px) {
+    .sectionCards {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+    
+    .sectionCards article {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .sectionCards figure {
+        width: 40%;
+    }
+
+    .sectionCards article p {
+        width: 60%;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .mysection{
+        align-items: center;
+    }
+    .mainSection .mysection h1{
+       font-size: 40px;
+       margin-top: -20px;
+    }
+    .mainSection .mysection p {
+        width: 250px;
+        font-size:14;
+        background-color:#6A805FD4;
+        padding: 10px;
+        margin: 0px;
+        margin-top: 10px;
+        
+    }
+    .icons-Artical {
+        gap: 4px;
+        padding: 5px;
+        margin-top: -130px;
+        z-index: -1;
+    }
+    .icons-Artical figure > img {
+        padding: 2px;
+        border-radius: 50%;
+        margin: 4px;
+        object-fit: contain;
+        background-color: #CFE795;
+        margin-top: -30px;
+    }
+    .icons-Artical figcaption{
+        font-size: 10px;
+    }
+
+
+    .sectionCards figure {
+        position: relative;
+        margin: 0;
+        
+    }
+    .sectionCards figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 5px;
+    }
+    .sectionCards article {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .sectionCards figure {
+        width: 50%;
+    }
+    .sectionCards figure h2 {
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        margin: 0;
+        padding:7px;
+        font-size: 20px;
+    }
+    .sectionCards article p {
+        width: 50%;
+        font-size: 14px;
+       text-align: left;
+       padding: 10px;
+    }
+    
+    footer{
+        margin-top: 60px;
+    }
+}

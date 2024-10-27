@@ -1,0 +1,5 @@
+Student name: sadik kaoutar
+o Student number: 724876
+o Student class: HAIT24FT1A
+o GitHub Repository: your github repository URL
+o GitHub Pages URL: your github pages URL*
